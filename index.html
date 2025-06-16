@@ -3,9 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/reset.css" />
     <title>MMED-1056 Web Dev 1 FIP Midterm</title>
   </head>
   <body>
+    <h1 class="hidden">Quatro Sparkling Water</h1>
+    <div id="sticky-nav-con">
+        <header class="grid-con" id="main-header">
+            <!-- Logo -->
+            <div id="logo" class="col-span-2 m-col-start-1 m-col-end-3">
+                <img src="images/quatro-logo.svg" alt="Quatro Logo">
+            </div>
+            <!-- Main Nav -->
+            <nav id="main-nav" class="col-span-2 m-col-start-10 m-col-end-13">
+                <h2 class="hidden">Main Navigation</h2>
+                <button id="button"></button>
+                <div id="burger-con">
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <section id="hero" class="full-width-grid-con" style="background:#FFE3D0;">
+        <h2 class="hidden">Fizz up your everyday moments</h2>
+        <div class="grid-con">
+            <div id="hero-content" class="col-span-full m-col-start-2 m-col-end-8 l-col-start-2 l-col-end-7">
+                <h2 class="hero-title">Fizz up your<br>everyday moments</h2>
+                <p class="hero-desc">
+                    Quatro is a modern sparkling water brand with a refreshing twist — crisp, bold yuzu flavour packed into every drop. Quatro is more than a drink — it’s a vibe.
+                </p>
+                <a href="#" class="cta-btn">Shop</a>
+            </div>
+            <div id="hero-img-placeholder" class="col-span-full m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12" aria-label="Hero image placeholder" style="background:#D9D9D9; border-radius:10px; width:100%; height:120px; max-width:180px; margin:auto;"></div>
+        </div>
+    </section>
+    <footer>
+      <p>&copy; 2025 MMED-1056 Web Dev 1 FIP</p>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>

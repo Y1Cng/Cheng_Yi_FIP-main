@@ -9,51 +9,42 @@
     <title>MMED-1056 Web Dev 1 FIP Midterm</title>
   </head>
   <body>
-    <h1 class="hidden">MMED-1056 Web Dev 1 FIP Midterm</h1>
-      <nav class="navbar full-width-grid-con">
-        <h2 class="hidden">Nav Menu</h2>
-        <div class="grid-con col-span-full nav-inner">
-          <div class="nav-logo col-span-2 m-col-span-2 l-col-span-6">
-            <img src="./images/quatro-logo.png" alt="Quatro Logo">
-          </div>
-          <ul class="nav-menu col-span-2 m-col-span-6 l-col-span-6">
-            <li><a href="index.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-          </ul>
-          <!-- <div class="nav-social col-span-4 m-col-span-4 l-col-span-4">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-            <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-          </div> -->
+    <h1 class="hidden">Quatro Sparkling Water</h1>
+    <div id="sticky-nav-con">
+        <header class="grid-con" id="main-header">
+            <!-- Logo -->
+            <div id="logo" class="col-span-2 m-col-start-1 m-col-end-3">
+                <img src="images/quatro-logo.svg" alt="Quatro Logo">
+            </div>
+            <!-- Main Nav -->
+            <nav id="main-nav" class="col-span-2 m-col-start-10 m-col-end-13">
+                <h2 class="hidden">Main Navigation</h2>
+                <button id="button"></button>
+                <div id="burger-con">
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <section id="hero" class="full-width-grid-con" style="background:#FFE3D0;">
+        <h2 class="hidden">Fizz up your everyday moments</h2>
+        <div class="grid-con">
+            <div id="hero-content" class="col-span-full m-col-start-2 m-col-end-8 l-col-start-2 l-col-end-7">
+                <h2 class="hero-title">Fizz up your<br>everyday moments</h2>
+                <p class="hero-desc">
+                    Quatro is a modern sparkling water brand with a refreshing twist — crisp, bold yuzu flavour packed into every drop. Quatro is more than a drink — it’s a vibe.
+                </p>
+                <a href="#" class="cta-btn">Shop</a>
+            </div>
+            <div id="hero-img-placeholder" class="col-span-full m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12" aria-label="Hero image placeholder" style="background:#D9D9D9; border-radius:10px; width:100%; height:120px; max-width:180px; margin:auto;"></div>
         </div>
-      </nav>
-
-        <nav class="lebby-navbar full-width-grid-con">
-          <div class="grid-con col-span-full lebby-nav-inner">
-            <div class="lebby-logo col-span-2 m-col-span-2 l-col-span-2">
-              <img src="image2" alt="Lebby Logo">
-            </div>
-            <ul class="lebby-menu col-span-5 m-col-span-6 l-col-span-6">
-              <li><a href="#">PRODUCTS</a></li>
-              <li><a href="#">ABOUT</a>/</li>
-              <li><a href="#">FIND US</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
-            <div class="lebby-social col-span-5 m-col-span-4 l-col-span-4">
-              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="lebby-shop-btn"><i class="fas fa-lock"></i> <span>SHOP LEBBY!</span></a>
-              <a href="#" aria-label="Cart" class="lebby-cart"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-          </div>
-        </nav>
-
-    <main></main>
+    </section>
     <footer>
       <p>&copy; 2025 MMED-1056 Web Dev 1 FIP</p>
     </footer>

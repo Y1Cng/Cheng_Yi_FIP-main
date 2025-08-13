@@ -1,4 +1,4 @@
-# Midterm Project: Responsive Boxed Layout Web Pages
+# Final Integrated Project
 
 This is the repo for Midterm Project: Responsive Boxed Layout Web Pages of MMED-1056 Web Development 1.
 

@@ -1,6 +1,6 @@
 # Final Integrated Project
 
-This is the repo for Midterm Project: Responsive Boxed Layout Web Pages of MMED-1056 Web Development 1.
+This is the repo for the FIP of MMED 1055 and MMED 1056.
 
 ## Overview
 

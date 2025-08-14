@@ -6,47 +6,177 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <title>MMED-1056 Web Dev 1 FIP Midterm</title>
+    <title>Quatro</title>
   </head>
   <body>
     <h1 class="hidden">Quatro Sparkling Water</h1>
-    <div id="sticky-nav-con">
-        <header class="grid-con" id="main-header">
-            <!-- Logo -->
-            <div id="logo" class="col-span-2 m-col-start-1 m-col-end-3">
-                <img src="images/quatro-logo.svg" alt="Quatro Logo">
-            </div>
-            <!-- Main Nav -->
-            <nav id="main-nav" class="col-span-2 m-col-start-10 m-col-end-13">
-                <h2 class="hidden">Main Navigation</h2>
-                <button id="button"></button>
-                <div id="burger-con">
-                    <ul>
-                        <li><a class="active" href="index.html">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Shop</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-    </div>
+    <header id="main-header" class="grid-con">
+      <div class="col-span-4 m-col-span-3 l-col-span-2">
+        <img src="./images/quatro-logo.png" alt="Quatro Logo" class="logo" />
+      </div>
+      <nav class="col-span-4 m-col-span-9 l-col-span-10">
+        <label class="nav-toggle" for="menu-toggle">☰</label>
+        <input type="checkbox" id="menu-toggle" class="hidden" />
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <section id="hero" class="full-width-grid-con" style="background:#FFE3D0;">
-        <h2 class="hidden">Fizz up your everyday moments</h2>
+    <main>
+      <section id="hero">
         <div class="grid-con">
-            <div id="hero-content" class="col-span-full m-col-start-2 m-col-end-8 l-col-start-2 l-col-end-7">
-                <h2 class="hero-title">Fizz up your<br>everyday moments</h2>
-                <p class="hero-desc">
-                    Quatro is a modern sparkling water brand with a refreshing twist — crisp, bold yuzu flavour packed into every drop. Quatro is more than a drink — it's a vibe.
-                </p>
-                <a href="#" class="cta-btn">Shop</a>
-            </div>
-            <div id="hero-img-placeholder" class="col-span-full m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12" aria-label="Hero image placeholder" style="background:#D9D9D9; border-radius:10px; width:100%; height:120px; max-width:180px; margin:auto;"></div>
+          <div class="col-span-full">
+            <h1>
+              Fizz up your<br />
+              everyday moments
+            </h1>
+            <p>
+              Quatro is a modern sparkling water brand with a refreshing twist -
+              crisp, bold yuzu flavour packed into every drop.
+            </p>
+            <p class="vibe">Quatro is more than a drink it's a vibe.</p>
+          </div>
         </div>
-    </section>
-    <footer>
-      <p>&copy; 2025 MMED-1056 Web Dev 1 FIP</p>
+      </section>
+
+      <section id="flavours" class="container">
+        <div class="grid-con">
+          <h2>Flavours</h2>
+          <div class="flavour-item col-span-full m-col-span-4 l-col-span-4">
+            <h3>Passionfruit Yuzu</h3>
+            <p>
+              Tropical tang with citrus snap<br />
+              Juicy, bold, and refreshing<br />
+              Passion meets punch
+            </p>
+          </div>
+          <div class="flavour-item col-span-full m-col-span-4 l-col-span-4">
+            <h3>Honey Lemon Yuzu</h3>
+            <p>
+              Naturally sweet with a citrus lift<br />
+              Zesty meets silky smooth<br />
+              Comforting but bold
+            </p>
+          </div>
+          <div class="flavour-item col-span-full m-col-span-4 l-col-span-4">
+            <h3>Mint Yuzu</h3>
+            <p>
+              Icy refreshment, no sugar crash<br />
+              Light fizz with a mint kick<br />
+              Clean, chill, and citrusy
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="healthy-properties" class="container">
+        <div class="grid-con">
+          <h2>Healthy Properties</h2>
+          <div class="property-item col-span-2 m-col-span-6 l-col-span-4">
+            <h3>No Added Sugar</h3>
+            <p>Sweetness from nature, not from syrups.</p>
+          </div>
+          <div class="property-item col-span-2 m-col-span-6 l-col-span-4">
+            <h3>Zero Calories</h3>
+            <p>Full flavour, no guilt.</p>
+          </div>
+          <div class="property-item col-span-full m-col-span-4 l-col-span-4">
+            <h3>Vitamin C Boost</h3>
+            <p>Supports immunity, fuels your day.</p>
+          </div>
+          <div class="property-item col-span-2 m-col-span-6 l-col-span-4">
+            <h3>Natural Extraction</h3>
+            <p>Real fruit essence, real refreshment.</p>
+          </div>
+          <div class="property-item col-span-2 m-col-span-6 l-col-span-4">
+            <h3>Caffeine-Free</h3>
+            <p>Calm energy without the crash.</p>
+          </div>
+          <div class="property-item col-span-full m-col-span-4 l-col-span-4">
+            <h3>No Artificial Flavours<br />or Colours</h3>
+            <p>Clean label. Pure taste</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="lorem-ipsum">
+        <div class="grid-con">
+          <div class="col-span-full">
+            <h3>Lorem ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="container">
+        <div class="grid-con">
+          <h2 class="col-span-full">Contact Us</h2>
+          <p class="col-span-full">
+            Let's stay in touch we'd love to hear from you.
+          </p>
+          <form
+            action="#"
+            method="POST"
+            class="contact-form col-span-full m-col-span-8 m-col-start-3 l-col-span-8 l-col-start-3"
+          >
+            <div class="grid-con">
+              <div class="col-span-full m-col-span-6">
+                <input type="text" name="first_name" placeholder="First Name" />
+              </div>
+              <div class="col-span-full m-col-span-6">
+                <input type="text" name="last_name" placeholder="Last Name" />
+              </div>
+              <div class="col-span-full">
+                <input type="email" name="email" placeholder="Email Address" />
+              </div>
+              <div class="col-span-full">
+                <input type="tel" name="phone" placeholder="Phone Number" />
+              </div>
+              <div class="col-span-full">
+                <textarea
+                  name="comments"
+                  placeholder="Enter your comments or questions here."
+                ></textarea>
+              </div>
+              <div class="col-span-full">
+                <button type="submit">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="main-footer">
+      <div class="grid-con">
+        <div class="col-span-full m-col-span-4 l-col-span-4">
+          <img
+            src="images/quatro-logo.svg"
+            alt="Quatro Logo"
+            id="footer-logo"
+          />
+        </div>
+        <div
+          class="col-span-full m-col-span-8 l-col-span-8"
+          id="footer-nav-con"
+        >
+          <nav id="footer-nav">
+            <a href="#">HOME </a>
+            <a href="#">ABOUT US </a>
+            <a href="#">CONTACT </a>
+          </nav>
+        </div>
+        <div id="footer-copyright" class="col-span-full">
+          <p>©2025 Quatrofit Inc. All Rights Reserved</p>
+        </div>
+      </div>
     </footer>
     <script src="js/main.js"></script>
   </body>

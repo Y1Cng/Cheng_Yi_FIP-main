@@ -20,7 +20,10 @@
         <ul class="nav-links">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <!-- <li><a href="contact.html">Contact</a></li> -->
+          <!-- 修改此行：将 Contact 链接改为锚点链接 -->
+          <!-- 点击链接时会跳转到当前页面的 #contact 锚点 -->
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -39,6 +42,20 @@
             </p>
             <p class="vibe">Quatro is more than a drink it's a vibe.</p>
           </div>
+        </div>
+
+        <!-- 添加气泡容器 -->
+        <div class="bubbles-container">
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
         </div>
       </section>
 
@@ -102,7 +119,7 @@
         </div>
       </section>
 
-      <section id="text-placeholder">
+      <section id="lorem-ipsum">
         <div class="grid-con">
           <div class="col-span-full">
             <h3>Lorem ipsum</h3>
@@ -121,37 +138,38 @@
           <p class="col-span-full">
             Let's stay in touch we'd love to hear from you.
           </p>
-          <form
-            action="#"
-            method="POST"
-            class="contact-form col-span-full m-col-span-8 m-col-start-3 l-col-span-8 l-col-start-3"
-          >
+          <form action="#" method="POST"
+            class="contact-form col-span-full m-col-span-8 m-col-start-3 l-col-span-8 l-col-start-3" id="contact-form">
             <div class="grid-con">
               <div class="col-span-full m-col-span-6">
-                <input type="text" name="first_name" placeholder="First Name" />
+                <input type="text" name="first_name" placeholder="First Name" id="first-name" required>
+                <div class="error-message" id="first-name-error"></div>
               </div>
               <div class="col-span-full m-col-span-6">
-                <input type="text" name="last_name" placeholder="Last Name" />
+                <input type="text" name="last_name" placeholder="Last Name" id="last-name" required>
+                <div class="error-message" id="last-name-error"></div>
               </div>
               <div class="col-span-full">
-                <input type="email" name="email" placeholder="Email Address" />
+                <input type="email" name="email" placeholder="Email Address" id="email" required>
+                <div class="error-message" id="email-error"></div>
               </div>
               <div class="col-span-full">
-                <input type="tel" name="phone" placeholder="Phone Number" />
+                <input type="tel" name="phone" placeholder="Phone Number" id="phone">
+                <div class="error-message" id="phone-error"></div>
               </div>
               <div class="col-span-full">
-                <textarea
-                  name="comments"
-                  placeholder="Enter your comments or questions here."
-                ></textarea>
+                <textarea name="comments" placeholder="Enter your comments or questions here." id="comments"
+                  required></textarea>
+                <div class="error-message" id="comments-error"></div>
               </div>
               <div class="col-span-full">
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit-btn">Submit</button>
               </div>
             </div>
           </form>
         </div>
       </section>
+      
     </main>
 
     <footer id="main-footer">
